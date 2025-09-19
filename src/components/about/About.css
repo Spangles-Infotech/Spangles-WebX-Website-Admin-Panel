@@ -1,0 +1,44 @@
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 52.36px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #395563;
+  text-align: left; /* Optional: adjust as needed */
+}
+
+.about-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #6B6A66;
+}
+
+.about-projects {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 33.78px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #395563;
+}
+
+.about-growth {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #6B6A66;
+}

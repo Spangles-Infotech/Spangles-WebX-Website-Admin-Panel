@@ -1,0 +1,59 @@
+.hero-section {
+  background-image: url(../../img/bg\ img.png); /* Replace with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section p.lead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal; /* Regular means normal style */
+  font-size: 16px;
+  line-height: 22.5px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: #6B6A66; /* Your custom color */
+}
+
+.hero-explore-button {
+  width: 140px;
+  height: 35px;
+  border-radius: 10px;
+  border-width: 0.75px;
+  background-color: #395563;
+  border: none;
+  opacity: 1;
+  display: inline-block;
+  text-align: center;  
+  transition: all 0.1s ease;
+}
+
+.hero-explore-button:hover {
+  background-color: #ffffff;
+  color: #395563;
+  border-color: #395563;
+  border: 1px solid #395563;
+}
+
+.custom-it-solution {
+  width: 190px;
+  height: 35px;
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D7DDE0; /* Optional: Add background color if needed */
+  color: #395563; /* Optional: Text color */
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+

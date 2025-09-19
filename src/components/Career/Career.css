@@ -1,0 +1,682 @@
+/* Career.css - drop this next to Career.jsx */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+
+:root {
+  --brand: #234b55;
+  --muted: #66777c;
+  --accent: #2f6b75;
+  --card-bg: #ffffff;
+  --page-bg: #f6fbfd;
+}
+
+* { box-sizing: border-box; }
+body, html { font-family: "Montserrat", sans-serif; }
+
+/* page wrapper */
+.career-page {
+  background: var(--page-bg);
+  color: var(--brand);
+}
+
+/* ---------- HERO ---------- */
+.career-hero {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.career-hero .hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(8,20,23,0.5), rgba(8,20,23,0.45));
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #fff;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ---------- INTRO ---------- */
+.career-intro{
+    background-color: white;
+    height: 85vh;
+}
+
+.career-contact {
+    background-color: #395563;
+    color: white;
+    border: 2px solid #395563;
+    border-radius: 10px;
+    width: 180px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: background 0.3s;
+
+
+}
+
+.career-intro-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: left;   /* horizontal center */
+  text-align: left;    /* center the text */
+  justify-content: center;
+}
+
+
+.career-contact:hover{
+    background-color: white;
+    color: #395563;
+}
+
+
+.career-intro-texts .career-subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2.24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.career-intro-texts .career-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 52.36px;
+  margin-bottom: 15px;
+}
+
+.career-intro-texts .career-description {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.65px;
+  margin-bottom: 20px;
+}
+
+
+.careerintroimg{
+    /* margin-top: 135px;
+    padding-top: 80px; */
+    height: 700px;
+    width: 100%;
+}
+
+/* ---------- OPENINGS ---------- */
+.career-openings {
+  padding: 52px 0 40px;
+  margin-top: 8px;
+}
+
+.openings-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.openings-title {
+  font-size: 26px;
+  margin: 6px 0 0;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* grid of job cards */
+.jobs-grid {
+  max-width: 1180px;
+  margin: 28px auto 10px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+/* individual job card */
+.job-card {
+  background: var(--card-bg);
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(19,46,53,0.05);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(26,50,55,0.03);
+}
+
+/* meta row: type (left) and location (right) */
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-type {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #eff8f9;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.job-location {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* job title and button */
+.job-title {
+  margin: 12px 0 14px;
+  font-size: 18px;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.btn-know-more {
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  align-self: flex-start;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Show all link centered */
+.show-all-wrap {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.show-all {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* bottom gap to mimic footer spacing */
+.career-bottom-gap { height: 80px; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 960px) {
+  .career-hero { height: 260px; }
+  .hero-title { font-size: 36px; }
+  .career-intro { grid-template-columns: 1fr; margin: -46px auto 24px; gap: 18px; }
+  .intro-right { height: 260px; border-radius: 10px; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .intro-left { padding: 22px; }
+}
+
+@media (max-width: 420px) {
+  .hero-title { font-size: 28px; }
+  .intro-title { font-size: 28px; }
+  .btn-primary { padding: 10px 14px; }
+}
+
+
+
+
+.career-footer{
+    background-color: white;
+}
+
+.career-logo{
+    width: 250px;
+    height: 125px;
+}
+
+
+/* CareerFooter.css - designed to match the screenshot closely */
+
+:root{
+  --brand:#234d56;
+  --muted:#8c9aa0;
+  --accent:#e84f6f; /* phone accent */
+  --card-bg: #ffffff;
+  --page-bg: #fbfdfe;
+  --card-shadow: 0 18px 40px rgba(16,32,36,0.07);
+  --radius: 12px;
+  --maxw: 1180px;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+}
+
+.career-footer {
+  background: var(--page-bg);
+  /* padding: 60px 20px 30px; */
+  color: #2b3b40;
+  position: relative;
+}
+
+/* --- floating white info card --- */
+.footer-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 5;
+}
+
+.footer-card {
+  width: 100%;
+  /* max-width: var(--maxw); */
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  padding: 22px 28px;
+  margin: 0 16px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 460px 1fr 1fr ;
+  gap: 18px;
+  align-items: center;
+}
+
+/* logo cell */
+.card-logo img.career-logo {
+  width: 150px;
+  display: block;
+  filter: grayscale(0.02);
+}
+
+/* card headings */
+.footer-card h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin: 0 0 8px;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.card-contact .phone {
+  display: block;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.card-contact .email {
+  display:block;
+  color: #6b7c82;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* address styling */
+.card-address address {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* socials */
+.card-follow .socials {
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.card-follow .social {
+  display:inline-flex;
+  width:36px;
+  height:36px;
+  border-radius:6px;
+  align-items:center;
+  justify-content:center;
+  background: #f4f7f8;
+  color: var(--brand);
+  text-decoration:none;
+}
+
+/* --- main footer area --- */
+.footer-main {
+  /* max-width: var(--maxw); */
+  margin: 0 auto;
+  padding: 34px 56px 18px;
+  background-color: white;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 420px 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+/* left column */
+.footer-main .footer-main-logo { width: 140px; margin-bottom: 20px; }
+.footer-desc {
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 340px;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* center links */
+.col-title {
+  color: var(--brand);
+  margin:0 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 28px;
+}
+.links-grid a {
+  color: #20444b;
+  text-decoration: none;
+  display:block;
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+/* right newsletter */
+.newsletter-desc { color: var(--muted); margin: 0 0 12px; font-size: 14px; line-height: 1.6; }
+.newsletter-form {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+.newsletter-form input[type="email"]{
+  width:100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #e7eef0;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  box-shadow: none;
+}
+.send-btn{
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 44px;
+  border-radius: 10px;
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  display: inline-flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+}
+
+/* --- divider and bottom bar --- */
+.footer-bottom {
+  width:100%;
+  /* max-width: var(--maxw); */
+  /* margin: 30px auto 0; */
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 18px 16px;
+  border-top: 4px solid #0a0a0a; /* visible dark line as screenshot */
+}
+.footer-bottom small { color: #8e9aa0; }
+.footer-bottom .bottom-right a {
+  color: #6b7c82;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.footer-bottom .sep { color: #d3d3d3; margin: 0 6px; }
+
+/* --- responsive --- */
+@media (max-width: 1000px) {
+  .card-grid { grid-template-columns: 220px 1fr; grid-auto-rows: auto; }
+  .card-address, .card-follow { display: none; } /* collapse gracefully on small screens */
+  .footer-columns { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+  .footer-bottom .bottom-right { order: 2; }
+  .footer-bottom .bottom-left { order: 1; }
+  .footer-card { padding: 18px; }
+}
+
+@media (max-width: 560px) {
+  .card-grid { grid-template-columns: 1fr; gap:12px; }
+  .card-logo { text-align:left; }
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background: #fff;
+  width: 1200px;
+  height: 700px;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+
+  /* Optional: center scrollable content if it's too long */
+  
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.career-apply-now{
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+transition: background 0.3s;
+
+background-color: #395563;
+border: 2px solid #395563;
+border-radius: 10px;
+color: white;
+width: 150px;
+height: 40px;
+margin-top: 20px;
+}
+
+.icon-career{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.career-apply-now:hover{
+    background-color: white;
+    color: #395563;
+}
+
+.modal-right-side {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;   /* instead of "Regular" */
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0;
+  vertical-align: middle;
+    display: flex;
+  gap: 24px; /* space between groups */
+  flex-wrap: wrap;
+}
+
+.modal-right-side .item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+}
+
+.modal-right-side p {
+  margin: 0; /* remove default p margin */
+}
+
+.col-career-left{
+  border-right: 2px solid #537277; /* separator line */
+  padding-right: 20px; /* spacing after border */
+  height: 650px;
+  overflow-y: auto;
+}
+
+.col-career-right{
+padding-left: 20px;
+}
+
+.expe-designation{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: #395563;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.expe-designation p{
+    margin: 0 !important;
+}
+
+
+.job-summary{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.preferred-skills{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.req-qual{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.res-and-duty{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.job-header {
+  display: flex;
+  justify-content: space-between; /* pushes title left, button right */
+  align-items: center;            /* vertical alignment */
+  margin-top: 30px;
+}
+
+.job-title {
+  margin: 0; /* optional: remove extra space */
+}
+
+.apply-form-modal {
+  z-index: 1100; /* higher than base modal */
+}
+
+
+.success-modal {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.success-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-img {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 20px;
+}

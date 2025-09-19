@@ -1,0 +1,80 @@
+.contact-background{
+  background-color: #F4F7FA;
+  height: 100vh;
+}
+
+
+.contact-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-img {
+  margin: 0;          /* remove any margins */
+  padding: 0;         /* remove inner spacing */
+}
+
+.contact-img img {
+  display: block;     /* removes inline gap */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;   /* optional: remove rounding if card already has it */
+}
+
+.contact-form button {
+  color: white;
+  background-color: #395563;
+  border: 2px solid #395563;
+  transition: background 0.3s;
+
+  /* Typography */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;       /* Bold */
+  font-size: 12px;
+  line-height: 18px;      /* instead of leading-trim */
+  letter-spacing: 0;      /* 0% → no spacing */
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #ffffff !important;
+  border: 2px solid #395563;
+  color: #395563;
+}
+
+
+.contact-us-headers {
+  text-align: left; /* Center align the block */
+  /* margin-bottom: 10px; */
+  padding-top: 80px;
+}
+
+/* First <p> (subtitle) */
+.contact-us-headers .contact-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #395563;
+}
+
+/* Second <p> (main title) */
+.contact-us-headers .contact-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;       /* SemiBold */
+  font-size: 32px;
+  line-height: 42.3px;
+  letter-spacing: -1.06px;
+  text-align: left;
+  margin: 0;
+  color: #161C2D;
+}

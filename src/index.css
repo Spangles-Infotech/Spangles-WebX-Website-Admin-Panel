@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;               /* very thin */
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  /* no background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #395563; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2b404d;
+}
+
+/* Remove arrows (increment/decrement buttons) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;                /* thin scrollbar */
+  scrollbar-color: #395563 transparent; /* color and transparent track */
+}
+
+/* Hide when not scrolling */
+body::-webkit-scrollbar {
+  display: none;
+}
+body:hover::-webkit-scrollbar {
+  display: block;
+}
