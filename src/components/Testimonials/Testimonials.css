@@ -86,6 +86,7 @@
   overflow: hidden;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  padding: 20px;
 }
 
 .card-image-testi img {

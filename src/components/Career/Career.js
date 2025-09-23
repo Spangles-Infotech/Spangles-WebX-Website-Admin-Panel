@@ -10,6 +10,7 @@ import { MdDateRange } from 'react-icons/md';
 import successImg from '../../img/OBJECTS.png'
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const Baseurl = process.env.REACT_APP_BACKEND_API_URL;
@@ -487,12 +488,10 @@ const Career = () => {
                     <div className="col-md-5 career-intro-texts">
                         <p className="career-subtitle">Opportunities with us</p>
                         <p className="career-title">Join our innovative team</p>
-                        <p className="career-description">
-                            Spangles Webx is a tech-driven company passionate about delivering innovative
-                            digital products. With a focus on design, usability, and performance, we help
-                            startups and enterprises scale with impactful web and mobile solutions.
+                        <p className="career-description" style={{textAlign:"justify"}}>
+                            Be the part of our company that thrives on creativity, technology, and collaboration. At Spangles Webx Pvt. Ld, we value talent, passion, and fresh ideas, offering opportunities to work on projects across web, mobile, and software solutions. Grow your career with us in a dynamic environment where learning, innovation, and teamwork are at the heart of everything we do.
                         </p>
-                        <button className="career-contact">Contact Us Now</button>
+                        {/* <button className="career-contact">Contact Us Now</button> */}
                     </div>
 
                     <div className="col-md-7 ">
@@ -552,42 +551,55 @@ const Career = () => {
 
                 {/* main footer area */}
                 <div className="footer-main container-fluid">
-                    <div className="footer-columns">
-                        <div className="col left">
+                    <div className="">
+                        {/* <div className="col left">
                             <img src={logo} alt="Spangles Webx" className="footer-main-logo" />
                             <p className="footer-desc">
-                                We are the best world Information Technology Company. Providing the highest quality in hardware,
-                                Software & Network solutions.
+                                We are the world's best Information Technology Company providing the highest quality in 
+                                Software solutions.
                             </p>
-                        </div>
+                        </div> */}
+                        <div className="footer-main container-fluid">
+                    <div className="footer-img-logo">
+                        <img className="logo-design" src={logo} alt="" />
+                        <p>We are the world's best Information Technology Company providing the highest quality in
+                            Software solutions.</p>
+                    </div>
+                </div>
 
-                        <div className="col center">
+                        {/* <div className="col center">
                             <h5 className="col-title">Quick Links</h5>
                             <div className="links-grid">
                                 <a href="#">Home</a>
                                 <a href="#">About Us</a>
                                 <a href="#">Services</a>
-                                <a href="#">Portfolio</a>
                                 <a href="#">Careers</a>
                                 <a href="#">Contact us</a>
                             </div>
-                        </div>
+                        </div> */}
+                        {/* <div className="col center">
+                            <h5 className="col-title">Quick Links</h5>
+                            <div className="links-grid">
+                                <NavLink to="/" className="footer-link">Home</NavLink>
+                                <NavLink to="/#about" className="footer-link">About Us</NavLink>
+                                <NavLink to="/#services" className="footer-link">Services</NavLink>
+                                <NavLink to="/career" className="footer-link">Careers</NavLink>
+                                <NavLink to="/#contact" className="footer-link">Contact Us</NavLink>
+                            </div>
+                        </div> */}
 
 
                     </div>
                 </div>
 
                 {/* divider line + bottom copyright area */}
-                <div className="footer-bottom container-fluid">
-                    <div className="bottom-left">
-                        <small>Copyright © 2021 Spangles Webx. All Rights Reserved.</small>
-                    </div>
-                    <div className="bottom-right">
-                        <a href="#">Privacy Policy</a>
-                        <span className="sep" aria-hidden="true">|</span>
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
+                <div className="footer-bottom-footer container-fluid" style={{ textAlign: "center", padding: "15px 0", borderTop:"4px solid #0a0a0a" }}>
+                <div className="bottom-center" style={{ textAlign: "center" }}>
+                    <small>
+                        Copyright © {new Date().getFullYear()} Spangles Webx. All Rights Reserved.
+                    </small>
                 </div>
+            </div>
             </footer>
         </main>
     )

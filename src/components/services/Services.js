@@ -4,45 +4,42 @@ import "./Services.css";
 import { FaArrowRight } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import web from "../../img/web-development.jpg";
-import ai from "../../img/ai-develop.jpg";
-import ui from "../../img/ui-ux-design.jpg";
-import teamicon from "../../img/team.png"
-import chaticon from "../../img/chat.png"
-import timeicon from "../../img/time.png"
-import transicon from "../../img/transparency.png"
+import web from "../../img/WebSite.jpg";
+import webapp from "../../img/WebApp.jpg";
+import mobapp from "../../img/Mobileapp.jpg";
+import softtesting from "../../img/Testing.jpg";
+import ui from "../../img/UIUX.jpg";
+import teamicon from "../../img/team.png";
+import chaticon from "../../img/chat.png";
+import timeicon from "../../img/time.png";
+import transicon from "../../img/transparency.png";
 
 export default function Services() {
   const services = [
     {
-      title: "Web Development",
-      desc: "Building scalable and modern web applications.",
+      title: "Website Development",
+      desc: "We build powerful, pixel-perfect websites that don’t just look good—they grow your business.",
       src: web,
-      hoverText: "We build fast, responsive websites tailored to your business needs.",
     },
     {
-      title: "AI Integration",
-      desc: "Empowering businesses with Artificial Intelligence.",
-      src: ai,
-      hoverText: "Integrate cutting-edge AI solutions to optimize your business processes.",
+      title: "Web App Development",
+      desc: "Transforming ideas into scalable, user-friendly web apps that work seamlessly across every device.",
+      src: webapp,
     },
     {
-      title: "UI/UX Design",
-      desc: "Crafting user-friendly and engaging designs.",
+      title: "Mobile App Development",
+      desc: "Building intuitive mobile apps that connect brands with users anytime, anywhere.",
+      src: mobapp,
+    },
+    {
+      title: "Software Testing",
+      desc: "Ensuring flawless performance with rigorous testing for reliable, high-quality software.",
+      src: softtesting,
+    },
+    {
+      title: "UI / UX Designing",
+      desc: "Crafting intuitive and engaging designs that turn users into loyal customers.",
       src: ui,
-      hoverText: "Designing intuitive interfaces to delight users at every interaction.",
-    },
-    {
-      title: "Development",
-      desc: "Custom high-performance mobile applications.",
-      src: web,
-      hoverText: "Custom apps tailored to your business goals.",
-    },
-    {
-      title: "Cyber Security",
-      desc: "Protecting your digital assets.",
-      src: ai,
-      hoverText: "Robust security solutions to safeguard your business.",
     },
   ];
 
@@ -65,10 +62,10 @@ export default function Services() {
   };
 
   const points = [
-    { title: "Expert Team of Developers & Designers", desc: "With lots of unique blocks, you can easily build a page without coding. ", icon: teamicon },
-    { title: "Modern, Scalable Tech Stack", desc: "With lots of unique blocks, you can easily build a page without coding. ", icon: chaticon },
-    { title: "Timely Delivery & Ongoing Support", desc: "With lots of unique blocks, you can easily build a page without coding. ", icon: timeicon },
-    { title: "100% Project Transparency", desc: "With lots of unique blocks, you can easily build a page without coding. ", icon: transicon },
+    { title: "Expert Team of Developers & Designers", desc: "A powerhouse of creative designers and skilled developers turning ideas into impactful digital solutions.", icon: teamicon },
+    { title: "Modern, Scalable Tech Stack", desc: "Empowering your business with a modern, scalable tech stack designed for growth and performance.", icon: chaticon },
+    { title: "Timely Delivery & Ongoing Support", desc: "Ensuring timely delivery and reliable ongoing support to keep your projects running smoothly.", icon: timeicon },
+    { title: "100% Project Transparency", desc: "Experience complete project transparency with clear updates and full visibility at every stage.", icon: transicon },
   ];
 
   return (
@@ -81,21 +78,46 @@ export default function Services() {
         <div className=" container " style={{paddingTop:"100px"}}>
           <h5 className="service-header"> Our Services </h5>
         </div>
-        <div className=" container d-flex justify-content-between align-items-center pt-5 pb-5">
+        {/* <div className=" container d-flex justify-content-between align-items-center pt-5 pb-5">
           <div className="custom-heading">
             We Offer a Wide <br /> Variety of IT Services
           </div>
           <div className="d-flex align-items-center">
             <p className="me-4 mb-0">
-              Spangles Webx is a tech-driven company passionate <br />
-              about delivering innovative digital products with a <br />
-              focus on design, usability, and performance.
+              At Spangles Webx Pvt.Ld, we offer a comprehensive range of IT services designed to empower businesses in the digital era. From web and mobile app development to software testing, and UI/UX design, our expert team delivers innovative, scalable, and reliable solutions tailored to your unique needs. We combine customer-focused approach to ensure every project is executed with precision, efficiency, and transparency, helping your business grow and stay ahead in a competitive market.
             </p>
-            {/* <button className="custom-btn">
+            <button className="custom-btn">
               All Services <FaArrowRight style={{ marginLeft: "8px" }} />
-            </button> */}
+            </button>
+          </div>
+        </div> */}
+        <div className="container pt-5 pb-5">
+          <div className="row align-items-center">
+            {/* Column 4 */}
+            <div className="col-4">
+              <div className="custom-heading">
+                We Offer a Wide <br /> Variety of IT Services
+              </div>
+            </div>
+
+            {/* Column 6 */}
+            <div className="col-6 service-content-p">
+              <p className="mb-0 service-para">
+                At <strong>Spangles Webx Pvt. Ld,</strong>  we offer a comprehensive range of IT services designed to empower businesses in the digital era. 
+                {/* From web and mobile app development to software testing, and UI/UX design, our expert team delivers innovative, scalable, and reliable solutions tailored to your unique needs.  */}
+                We combine customer-focused approach to ensure every project is executed with precision, efficiency, and transparency, helping your business grow and stay ahead in a competitive market.
+              </p>
+            </div>
+
+            {/* Column 2 */}
+            <div className="col-2 d-flex justify-content-end">
+              {/* <button className="custom-btn">
+                All Services <FaArrowRight style={{ marginLeft: "8px" }} />
+              </button> */}
+            </div>
           </div>
         </div>
+
 
         <Carousel
           className="container pb-5"
@@ -109,18 +131,24 @@ export default function Services() {
           containerClass="carousel-container"
         >
           {services.map((service, idx) => (
-            <div key={idx} className="px-2 mx-2">
-              <div className="service-card">
-                <img src={service.src} alt={service.title} className="service-img" />
-                <div className="service-overlay-box">
-                  <h5>{service.title}</h5>
-                  <p>{service.desc}</p>
-                </div>
-              </div>
-            </div>
+  <div key={idx} className="px-2 mx-2">
+    <div className="service-card">
+      <img src={service.src} alt={service.title} className="service-img" />
 
+      {/* Default gradient with title */}
+      <div className="service-gradient-title">
+        <h5>{service.title}</h5>
+      </div>
 
-          ))}
+      {/* Hover white overlay */}
+      <div className="service-overlay-box">
+        <h5>{service.title}</h5>
+        <p>{service.desc}</p>
+      </div>
+    </div>
+  </div>
+))}
+
         </Carousel>
       </div>
 
@@ -179,8 +207,7 @@ export default function Services() {
               Ready to launch your next project?
             </h4>
             <p className="get-start-para">
-              With lots of unique blocks, you can easily build a page without coding. <br />Build
-              your next landing page.
+              Ready to launch your next project? We combine creativity, technology, and expertise to bring your vision to life. With a focus on quality and timely delivery, we ensure your project succeeds from start to finish.
             </p>
           </div>
           {/* <div>

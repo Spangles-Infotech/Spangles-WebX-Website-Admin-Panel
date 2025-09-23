@@ -22,8 +22,8 @@ export default function About() {
             <p className="about-text">
               Spangles Webx is a tech-driven company passionate about delivering innovative digital products. With a focus on design, usability, and performance, we help startups and enterprises scale with impactful web and mobile solutions.
             </p>
-            <h4 className="about-projects">2.5K</h4>
-            <p  className="about-growth">Growth, Compare to Previous Year</p>
+            {/* <h4 className="about-projects">2.5K</h4>
+            <p  className="about-growth">Growth, Compare to Previous Year</p> */}
           </Col>          
         </Row>
       </Container>

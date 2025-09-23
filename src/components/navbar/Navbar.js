@@ -26,14 +26,7 @@ export default function NavigationBar() {
 
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mx-auto">
-            {/* Home scrolls to hero */}
-            {/* <Nav.Link
-              as={NavLink} to="/#hero"
-              className={`nav-link-custom ${activeSection === "hero" ? "active" : ""}`}
-              onClick={() => handleNavClick("hero")}
-            >
-              Home
-            </Nav.Link> */}
+           
             <Nav.Link
               as={HashLink}
               smooth
@@ -44,13 +37,7 @@ export default function NavigationBar() {
               Home
             </Nav.Link>
 
-            {/* <Nav.Link
-              as={NavLink} to="/#about"
-              className={`nav-link-custom ${activeSection === "about" ? "active" : ""}`}
-              onClick={() => handleNavClick("about")}
-            >
-              About
-            </Nav.Link> */}
+            
             <Nav.Link
               as={HashLink}
               smooth
@@ -61,13 +48,6 @@ export default function NavigationBar() {
               About
             </Nav.Link>
 
-            {/* <Nav.Link
-              as={NavLink} to="/#services"
-              className={`nav-link-custom ${activeSection === "services" ? "active" : ""}`}
-              onClick={() => handleNavClick("services")}
-            >
-              Services
-            </Nav.Link> */}
             <Nav.Link
               as={HashLink}
               smooth
@@ -78,22 +58,6 @@ export default function NavigationBar() {
               Services
             </Nav.Link>
 
-            {/* <Nav.Link
-              as={NavLink} to="/#featuredworks"
-              className={`nav-link-custom ${activeSection === "featuredworks" ? "active" : ""}`}
-              onClick={() => handleNavClick("featuredworks")}
-            >
-              Portfolio
-            </Nav.Link> */}
-            <Nav.Link
-              as={HashLink}
-              smooth
-              to="/#featuredworks"
-              className={`nav-link-custom ${activeSection === "featuredworks" ? "active" : ""}`}
-              onClick={() => handleNavClick("featuredworks")}
-            >
-              Portfolio
-            </Nav.Link>
 
             {/* Career navigates to a new page */}
             <Nav.Link
@@ -103,12 +67,18 @@ export default function NavigationBar() {
             >
               Career
             </Nav.Link>
+            <Nav.Link
+              as={HashLink}
+              smooth
+              to="/#contact"
+              className={`nav-link-custom ${activeSection === "contact" ? "active" : ""}`}
+              onClick={() => handleNavClick("contact")}
+            >
+              Contact
+            </Nav.Link>
           </Nav>
 
-          {/* Contact Us Button */}
-          <Button className="custom-contact-btn">
-            Contact Us <FaArrowRight style={{ marginLeft: "8px" }} />
-          </Button>
+         
         </Navbar.Collapse>
       </div>
     </Navbar>

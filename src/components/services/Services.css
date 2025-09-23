@@ -2,13 +2,15 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-style: bold;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: 2.24px;
     text-transform: uppercase;
     vertical-align: middle;
     text-align: left;
-}.service-card {
+}
+
+/* .service-card {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -28,7 +30,6 @@
   filter: brightness(70%);
 }
 
-/* Small floating white box */
 .service-overlay-box {
   position: absolute;
   bottom: 20px;
@@ -59,7 +60,86 @@
   font-size: 0.95rem;
   line-height: 1.4;
   margin: 0;
+} */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
 }
+
+.service-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.05);
+}
+
+/* Gradient title (default visible) */
+.service-gradient-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.service-gradient-title h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* White hover box (hidden by default) */
+.service-overlay-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.service-overlay-box h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #345261;
+}
+
+.service-overlay-box p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #555;
+}
+
+/* Hover state */
+.service-card:hover .service-overlay-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover .service-gradient-title {
+  opacity: 0;
+}
+
 
 
 .custom-btn {
@@ -178,11 +258,6 @@ text-transform: uppercase;
   max-width: 550px;
   width: 100%;
 }
-
-/* .feature-box:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-} */
-
 .icon-box {
   display: flex;
   align-items: center;
@@ -238,4 +313,23 @@ text-transform: uppercase;
   line-height: 28.2px;
   letter-spacing: -0.18px;
   /* max-width: 400px;             uncomment this to make the button alignment correctly */
+}
+
+
+.service-content-p{
+  margin-left: 60px;
+}
+
+.service-para{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28.2px;
+  letter-spacing: -0.18px;
+  text-align: justify;
+}
+
+.text-start p{
+    font-size: 14px;
 }

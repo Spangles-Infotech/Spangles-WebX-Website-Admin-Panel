@@ -95,7 +95,7 @@ export default function Contact() {
 
 
   return (
-    <div className="contact-background">
+    <div id="contact" className="contact-background">
       <div className="container">
         <div className="row">
           <div className="col-md-12 contact-us-headers">

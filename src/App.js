@@ -6,7 +6,7 @@ import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact";
-import { Featuredwork } from "./components/Featured/Featuredwork";
+// import { Featuredwork } from "./components/Featured/Featuredwork";
 import Career from "./components/Career/Career";
 import Layout from "./Layout";
 import { Routes, Route } from "react-router-dom";
@@ -22,7 +22,6 @@ function Home() {
       <Hero />
       <About />
       <Services />
-      <Featuredwork />
       <Testimonials />
       <Contact />
       <Footer/>
